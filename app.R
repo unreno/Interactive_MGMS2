@@ -2,7 +2,9 @@
 library(shiny)
 
 library(MGMS2)
-mono.info = gather_summary_file(directory='Mix_Final')
+
+mono.info = gather_summary_file(directory='Dummy_Mix')
+
 sim.template <- create_insilico_mixture_template(mono.info) 
 
 species_list <-   list(
@@ -122,7 +124,7 @@ server <- function(input, output) {
 	output$spectrum <- renderPlot({
 
 		mixture.ratio <- list()
-		#for( specie in MGMS2::species ){
+
 		for( specie in species ){
 			mixture.ratio[specie]=input[[specie]]
 		}

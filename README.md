@@ -1,7 +1,7 @@
 #	Interactive MGMS2
 
 This is a Shiny app to demo the ability of the MGMS2 R package.
-The code is shared. The data is not.
+The code is shared. The data is dummy.
 
 
 ##	Prepare Environment
