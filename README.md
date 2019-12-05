@@ -83,9 +83,14 @@ Users may want to include new microbiomes to build an interactive MGMS2 Shiny ap
 2. Create a file that contains summary statistics of a specified species by running,
 
 ```R
-spectra.processed <- process_monospectra(file='<SAMPLE DESCRIPTION FILE>', mass.range=c(1000,2200))
+spectra.processed <- process_monospectra(
+	file='<SAMPLE DESCRIPTION FILE>',
+	mass.range=c(1000,2200))
 summarize_monospectra
-spectra.mono.summary.A <- summarize_monospectra(processed.obj=spectra.processed, species='<SPECIES>', directory='<DIRECTORY>')
+spectra.mono.summary.A <- summarize_monospectra(
+	processed.obj=spectra.processed,
+	species='<SPECIES>',
+	directory='<DIRECTORY>')
 ```
 Please specify SAMPLE DESCRIPTION FILE, SPECIES, and DIRECTORY. 
 
