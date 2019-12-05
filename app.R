@@ -3,17 +3,23 @@ library(shiny)
 
 library(MGMS2)
 
-mono.info = gather_summary_file(directory='Dummy_Mix')
+mono.info = gather_summary_file(directory='Mix')
 
 sim.template <- create_insilico_mixture_template(mono.info) 
 
+#species_list <-   list(
+#  'Ab' = 'Acinetobacter baumannii',
+#  'Ec' = 'Enterobacter cloacae',
+#  'Ef' = 'Enterococus faecalis',
+#  'Kp' = 'Klebsiella pneumoniae',
+#  'Pa' = 'Pseudomonas aerugonusa',
+#  'Sa' = 'Staphylococcus aureus'
+#)
+
 species_list <-   list(
-  'Ab' = 'Acinetobacter baumannii',
-  'Ec' = 'Enterobacter cloacae',
-  'Ef' = 'Enterococus faecalis',
-  'Kp' = 'Klebsiella pneumoniae',
-  'Pa' = 'Pseudomonas aerugonusa',
-  'Sa' = 'Staphylococcus aureus'
+  'A' = 'Species A',
+  'B' = 'Species B',
+  'C' = 'Species C'
 )
 
 species = names(species_list)
