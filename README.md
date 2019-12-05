@@ -40,6 +40,10 @@ library(shiny)
 runApp(launch.browser = TRUE)
 ```
 
+```BASH
+R -e "library(shiny);runApp(launch.browser = TRUE)"
+```
+
 
 
 
