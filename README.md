@@ -35,10 +35,14 @@ mono.info=gather_summary_file(directory='<DIRECTORY>')
 
 ### Running Interactive MGMS2 app locally
 
+In R, 
+
 ```R
 library(shiny)
 runApp(launch.browser = TRUE)
 ```
+
+or directly from the command line,
 
 ```BASH
 R -e "library(shiny);runApp(launch.browser = TRUE)"
